@@ -14,8 +14,8 @@
     <script type="module" src="https://unpkg.com/franken-ui/dist/js/icon.iife.js"></script>
 </head>
 
-<body class="flex flex-col w-full h-screen">
-    <section>
+<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn">
+    <section id="home">
         <svg id="studio_logo_svg">
             <defs>
                 <clipPath id="clip_logo" clipPathUnits="objectBoundingBox">
@@ -40,23 +40,28 @@
         <div class="flex flex-col p-4 justify-center h-screen items-center bg-primary/80">
             <img class="absolute z-5" id="hero_image" src="images/hero_image.jpg" alt="cover">
 
-            <header class="flex justify-end w-full h-10">
-                <nav class="flex gap-2 p-2">
-                    <a href="#" >
-                        <span class="block font-semibold text-white">Home</span>
-                    </a>
-                    <a href="#" >
-                        <span class="block font-semibold text-white">Serviços</span>
-                    </a>
-                    
-                    
-                </nav>
-            </header>
-
             <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
-                <h1 class="font-bold text-[12rem] text-white">Studio</h1>
-                <h1 class="font-bold text-9xl text-right text-white z-10">Peregrino</h1>
+                <header class="flex justify-end items-center w-full h-12">
+                    <nav class="flex gap-2 p-2 bg-[#393f42] rounded-l-md rounded-br-md">
+                        <a href="#home">
+                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-primary/20 transition duration-300 ease-in-out">
+                                Home
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-primary/20 transition duration-300 ease-in-out">
+                                Serviços
+                            </div>
+                        </a>
+                    </nav>
+                </header>
+                
+                <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
+                    <h1 class="font-bold text-[12rem] text-white">Studio</h1>
+                    <h1 class="font-bold text-9xl text-right text-white z-10">Peregrino</h1>
+                </div>
             </div>
+            
         </div>
     </section>
 
