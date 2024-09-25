@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:title" content="Studio Peregrino">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.studioperegrino.com.br/">
+    <meta property="og:description" content="DESIGN QUE INSPIRA">
+    <meta itemprop="name" content="Studio Peregrino">
+    <meta itemprop="description" content="DESIGN QUE INSPIRA">
+    <meta itemprop="url" content="https://www.studioperegrino.com.br/">
+
     <title>Studio Peregrino</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,11 +21,14 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/franken-ui/dist/css/core.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/franken-ui/dist/js/core.iife.js"></script>
     <script type="module" src="https://unpkg.com/franken-ui/dist/js/icon.iife.js"></script>
 </head>
 
-<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn">
+<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn bg-primary/80">
     <section id="home">
         <svg id="studio_logo_svg">
             <defs>
@@ -38,20 +51,20 @@
                 </clipPath>
             </defs>
         </svg>
-        <div class="flex flex-col p-4 justify-center h-screen items-center bg-primary/80">
+        <div class="flex flex-col p-4 justify-center h-screen items-center">
             <img class="absolute z-5" id="hero_image" src="images/hero_image.jpg" alt="cover">
 
             <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
-                <header class="flex justify-end items-center w-full h-12">
-                    <nav class="flex gap-2 p-2 bg-gold rounded-l-md rounded-br-md">
+                <header class="flex justify-end items-center w-full ">
+                    <nav class="flex flex-col items-end gap-2 p-2  rounded-l-md rounded-br-md">
                         <a href="#home">
-                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-primary/20 transition duration-300 ease-in-out">
+                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-white/20 transition duration-100 ease-in-out">
                                 Home
                             </div>
                         </a>
                         <a href="#">
-                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-primary/20 transition duration-300 ease-in-out">
-                                Serviços
+                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-white/20 transition duration-100 ease-in-out">
+                                Soluções
                             </div>
                         </a>
                     </nav>
@@ -63,12 +76,35 @@
                 </div>
 
                 <div class="absolute bottom-8 flex flex-col justify-center w-96">
-                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-lg text-white bg-gold">Design que inspira</h2>
-                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-bl-lg place-self-center text-white bg-gold">a sua marca</h2>
-                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-bl-lg rounded-tr-lg rounded-br-lg place-self-end text-white bg-gold">memorável</h2>
+                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-lg text-white bg-white/20">Design que inspira</h2>
+                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-bl-lg place-self-center text-white bg-white/20">a sua marca</h2>
+                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-bl-lg rounded-tr-lg rounded-br-lg place-self-end text-white bg-white/20">memorável</h2>
                 </div>
             </div>
-            
+        </div>
+    </section>
+    <section>
+        <div class="p-4">
+            <div class="flex flex-col gap-2 justify-start items-start">
+                <div class="flex flex-col w-full h-40 rounded-3xl">
+                    <div class="flex h-24 p-2 w-full">
+                        <h1 class="font-bold text-7xl text-white">Soluções</h1>
+                    </div>
+                    <div class="flex p-2 w-1/2">
+                        <p class="text-white text-md">Oferecemos um conjunto abrangente de serviços para atender a todas as suas necessidades criativas.</p>
+                    </div>
+                </div>
+                <div class="flex w-full h-80 bg-white rounded-3xl">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col p-4 justify-center h-80 items-center">
+            <div class="flex flex-col p-4 rounded-3xl w-full h-80 justify-center bg-primary">
+                <h2 class="text-5xl font-semibold text-center w-fit p-8 text-white">Acreditamos que o design é mais do que apenas estética; é a linguagem visual que comunica, inspira e cria conexões.</h2>
+            </div>
         </div>
     </section>
 

@@ -21,3 +21,6 @@ svg#studio_logo_svg {
     width:0;
     height:0;
 }
+body {
+    font-family: "Inter", sans-serif;
+}
