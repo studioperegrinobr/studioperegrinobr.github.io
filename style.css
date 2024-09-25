@@ -10,7 +10,7 @@
 }
 
 img#hero_image {
-    max-width: 350px;
+    max-width: 400px;
     aspect-ratio: 82 / 100;
     clip-path: url(#clip_logo)
 }
@@ -20,7 +20,4 @@ svg#studio_logo_svg {
     lef: -10px;
     width:0;
     height:0;
-}
-#hero_section_title {
-    font-size: 10rem;
 }
