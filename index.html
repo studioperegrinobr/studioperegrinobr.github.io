@@ -14,26 +14,54 @@
     <script type="module" src="https://unpkg.com/franken-ui/dist/js/icon.iife.js"></script>
 </head>
 
-<body class="flex flex-col w-full h-screen">
-    <section>
+<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn">
+    <section id="home">
         <svg id="studio_logo_svg">
             <defs>
                 <clipPath id="clip_logo" clipPathUnits="objectBoundingBox">
-                    <path d="M0.369052 0.90694L0.192291 0.529069C0.162557 0.480749 0.0889798 0.466839 0.0421551 0.493267C-0.000926431 0.517583 -0.0141193 0.571948 0.0203601 0.612599C0.136595 0.710713 0.252817 0.808827 0.369052 0.90694Z" fill="black" stroke="#1D1D1B" stroke-miterlimit="10"/>
-                    <path d="M0.499708 0.896398L0.707742 0.453976C0.709409 0.450333 0.717729 0.413847 0.695538 0.384553C0.669704 0.350456 0.618373 0.3444 0.616028 0.344447C0.535317 0.344447 0.471543 0.344447 0.390832 0.344447C0.387781 0.344296 0.334416 0.350967 0.306519 0.382627C0.280586 0.412072 0.292648 0.452213 0.293976 0.455484C0.363387 0.605306 0.430283 0.746577 0.499694 0.896398H0.499708Z" fill="black" stroke="#1D1D1B" stroke-miterlimit="10"/>
-                    <path d="M0.630966 0.90694L0.807728 0.529069C0.837461 0.480749 0.911039 0.466839 0.957863 0.493267C1.00094 0.517583 1.01414 0.571948 0.979658 0.612599C0.863423 0.710713 0.747202 0.808827 0.630966 0.90694Z" fill="black" stroke="#1D1D1B" stroke-miterlimit="10"/>
-                    <path d="M0.195908 0.915886C0.263807 0.936142 0.372344 0.960969 0.50827 0.960633C0.641385 0.960296 0.747831 0.935956 0.815123 0.915886C0.814671 0.92345 0.811988 0.948625 0.787947 0.971074C0.765982 0.991585 0.739229 0.997653 0.729836 0.999416H0.290037C0.283158 0.998825 0.240373 0.994555 0.214072 0.963614C0.197603 0.944228 0.195992 0.924251 0.195908 0.915886Z" fill="black" stroke="#1D1D1B" stroke-miterlimit="10"/>
-                    <path d="M0.500345 4.57764e-05C0.500797 0.00780716 0.503961 0.0442938 0.540969 0.073135C0.574826 0.0995168 0.614659 0.102092 0.625084 0.102498C0.612244 0.104239 0.575081 0.110689 0.542791 0.13728C0.510642 0.163742 0.502817 0.194115 0.500684 0.204684C0.497986 0.193291 0.489836 0.1672 0.462885 0.143254C0.43109 0.114993 0.392938 0.107348 0.379547 0.10519C0.390593 0.103995 0.43181 0.0984726 0.464707 0.0686684C0.495288 0.0409641 0.499512 0.00966339 0.500359 5.73778e-05L0.500345 4.57764e-05Z" fill="black" stroke="#1D1D1B" stroke-miterlimit="10"/>
+                    <path
+                        d="M0.369052 0.90694L0.192291 0.529069C0.162557 0.480749 0.0889798 0.466839 0.0421551 0.493267C-0.000926431 0.517583 -0.0141193 0.571948 0.0203601 0.612599C0.136595 0.710713 0.252817 0.808827 0.369052 0.90694Z"
+                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
+                    <path
+                        d="M0.499708 0.896398L0.707742 0.453976C0.709409 0.450333 0.717729 0.413847 0.695538 0.384553C0.669704 0.350456 0.618373 0.3444 0.616028 0.344447C0.535317 0.344447 0.471543 0.344447 0.390832 0.344447C0.387781 0.344296 0.334416 0.350967 0.306519 0.382627C0.280586 0.412072 0.292648 0.452213 0.293976 0.455484C0.363387 0.605306 0.430283 0.746577 0.499694 0.896398H0.499708Z"
+                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
+                    <path
+                        d="M0.630966 0.90694L0.807728 0.529069C0.837461 0.480749 0.911039 0.466839 0.957863 0.493267C1.00094 0.517583 1.01414 0.571948 0.979658 0.612599C0.863423 0.710713 0.747202 0.808827 0.630966 0.90694Z"
+                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
+                    <path
+                        d="M0.195908 0.915886C0.263807 0.936142 0.372344 0.960969 0.50827 0.960633C0.641385 0.960296 0.747831 0.935956 0.815123 0.915886C0.814671 0.92345 0.811988 0.948625 0.787947 0.971074C0.765982 0.991585 0.739229 0.997653 0.729836 0.999416H0.290037C0.283158 0.998825 0.240373 0.994555 0.214072 0.963614C0.197603 0.944228 0.195992 0.924251 0.195908 0.915886Z"
+                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
+                    <path
+                        d="M0.500345 4.57764e-05C0.500797 0.00780716 0.503961 0.0442938 0.540969 0.073135C0.574826 0.0995168 0.614659 0.102092 0.625084 0.102498C0.612244 0.104239 0.575081 0.110689 0.542791 0.13728C0.510642 0.163742 0.502817 0.194115 0.500684 0.204684C0.497986 0.193291 0.489836 0.1672 0.462885 0.143254C0.43109 0.114993 0.392938 0.107348 0.379547 0.10519C0.390593 0.103995 0.43181 0.0984726 0.464707 0.0686684C0.495288 0.0409641 0.499512 0.00966339 0.500359 5.73778e-05L0.500345 4.57764e-05Z"
+                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
                 </clipPath>
             </defs>
         </svg>
         <div class="flex flex-col p-4 justify-center h-screen items-center bg-primary/80">
             <img class="absolute z-5" id="hero_image" src="images/hero_image.jpg" alt="cover">
-            
+
             <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
-                <h1 class="font-bold text-[15rem] text-white">Studio</h1>
-                <h1 class="font-bold text-9xl text-right text-white z-10">Peregrino</h1>
+                <header class="flex justify-end items-center w-full h-12">
+                    <nav class="flex gap-2 p-2 bg-[#393f42] rounded-l-md rounded-br-md">
+                        <a href="#home">
+                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-primary/20 transition duration-300 ease-in-out">
+                                Home
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-primary/20 transition duration-300 ease-in-out">
+                                Serviços
+                            </div>
+                        </a>
+                    </nav>
+                </header>
+                
+                <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
+                    <h1 class="font-bold text-[12rem] text-white">Studio</h1>
+                    <h1 class="font-bold text-9xl text-right text-white z-10">Peregrino</h1>
+                </div>
             </div>
+            
         </div>
     </section>
 
