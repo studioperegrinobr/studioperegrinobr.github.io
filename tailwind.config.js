@@ -2,7 +2,8 @@ tailwind.config = {
     theme: {
       extend: {
         colors: {
-          primary: "#080f13"
+          primary: "#080f13",
+          gold: "#916123"
         },
         keyframes: {
           "fadeIn": {
