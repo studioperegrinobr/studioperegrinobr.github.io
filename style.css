@@ -1,26 +1,20 @@
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
 
-@supports (font-variation-settings: normal) {
-    :root {
-      font-family: InterVariable, sans-serif;
-    }
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-img#hero_image {
-    max-width: 400px;
-    aspect-ratio: 82 / 100;
-    clip-path: url(#clip_logo)
-}
-svg#studio_logo_svg {
-    position: absolute;
-    top: -10px;
-    lef: -10px;
-    width:0;
-    height:0;
-}
-body {
-    font-family: "Inter", sans-serif;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #B68B2E;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
