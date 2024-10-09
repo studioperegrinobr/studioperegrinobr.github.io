@@ -1,9 +1,14 @@
 tailwind.config = {
     theme: {
+      fontFamily: {
+        'sans': 'Outfit, sans-serif',
+        'expletus': 'Expletus Sans, sans-serif'
+      },
       extend: {
         colors: {
           primary: "#080f13",
-          gold: "#916123"
+          backgrond: "#fffcf3",
+          gold: "#B68B2E"
         },
         keyframes: {
           "fadeIn": {

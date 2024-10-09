@@ -16,100 +16,121 @@
 
     <title>Studio Peregrino</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://rsms.me/" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/franken-ui/dist/css/core.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/franken-ui/dist/js/core.iife.js"></script>
-    <script type="module" src="https://unpkg.com/franken-ui/dist/js/icon.iife.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="cdn-tailwindcss-3.4.5.js"></script>
 </head>
 
-<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn bg-primary/80">
-    <section id="home">
-        <svg id="studio_logo_svg">
-            <defs>
-                <clipPath id="clip_logo" clipPathUnits="objectBoundingBox">
-                    <path
-                        d="M0.369052 0.90694L0.192291 0.529069C0.162557 0.480749 0.0889798 0.466839 0.0421551 0.493267C-0.000926431 0.517583 -0.0141193 0.571948 0.0203601 0.612599C0.136595 0.710713 0.252817 0.808827 0.369052 0.90694Z"
-                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
-                    <path
-                        d="M0.499708 0.896398L0.707742 0.453976C0.709409 0.450333 0.717729 0.413847 0.695538 0.384553C0.669704 0.350456 0.618373 0.3444 0.616028 0.344447C0.535317 0.344447 0.471543 0.344447 0.390832 0.344447C0.387781 0.344296 0.334416 0.350967 0.306519 0.382627C0.280586 0.412072 0.292648 0.452213 0.293976 0.455484C0.363387 0.605306 0.430283 0.746577 0.499694 0.896398H0.499708Z"
-                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
-                    <path
-                        d="M0.630966 0.90694L0.807728 0.529069C0.837461 0.480749 0.911039 0.466839 0.957863 0.493267C1.00094 0.517583 1.01414 0.571948 0.979658 0.612599C0.863423 0.710713 0.747202 0.808827 0.630966 0.90694Z"
-                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
-                    <path
-                        d="M0.195908 0.915886C0.263807 0.936142 0.372344 0.960969 0.50827 0.960633C0.641385 0.960296 0.747831 0.935956 0.815123 0.915886C0.814671 0.92345 0.811988 0.948625 0.787947 0.971074C0.765982 0.991585 0.739229 0.997653 0.729836 0.999416H0.290037C0.283158 0.998825 0.240373 0.994555 0.214072 0.963614C0.197603 0.944228 0.195992 0.924251 0.195908 0.915886Z"
-                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
-                    <path
-                        d="M0.500345 4.57764e-05C0.500797 0.00780716 0.503961 0.0442938 0.540969 0.073135C0.574826 0.0995168 0.614659 0.102092 0.625084 0.102498C0.612244 0.104239 0.575081 0.110689 0.542791 0.13728C0.510642 0.163742 0.502817 0.194115 0.500684 0.204684C0.497986 0.193291 0.489836 0.1672 0.462885 0.143254C0.43109 0.114993 0.392938 0.107348 0.379547 0.10519C0.390593 0.103995 0.43181 0.0984726 0.464707 0.0686684C0.495288 0.0409641 0.499512 0.00966339 0.500359 5.73778e-05L0.500345 4.57764e-05Z"
-                        fill="black" stroke="#1D1D1B" stroke-miterlimit="10" />
-                </clipPath>
-            </defs>
-        </svg>
-        <div class="flex flex-col p-4 justify-center h-screen items-center">
-            <img class="absolute z-5" id="hero_image" src="images/hero_image.jpg" alt="cover">
-
-            <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
-                <header class="flex justify-end items-center w-full ">
-                    <nav class="flex flex-col items-end gap-2 p-2  rounded-l-md rounded-br-md">
+<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn justify-start items-center bg-gray-100 gap-16">
+    <header class="w-full fixed top-0 backdrop-blur z-50">
+        <div class="flex flex-col p-4 justify-center items-center">
+            <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full justify-center items-center">
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex">
+                        <img src="images/StudioPeregrinoBlack.png" class="w-24" alt="logo">
+                    </div>
+                    <nav class="flex  items-center gap-2 p-2  rounded-l-md rounded-br-md">
                         <a href="#home">
-                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-white/20 transition duration-100 ease-in-out">
-                                Home
+                            <div class="flex uppercase px-2 py-1 rounded transition duration-100 ease-in-out">
+                                <span class="font-semibold uppercase">Home</span>
                             </div>
                         </a>
-                        <a href="#">
-                            <div class="flex text-white uppercase px-2 py-1 rounded hover:bg-white/20 transition duration-100 ease-in-out">
-                                Soluções
+                        <a href="#trabalhos">
+                            <div class="flex uppercase px-2 py-1 rounded transition duration-100 ease-in-out">
+                                <span class="font-semibold uppercase">Trabalhos</span>
                             </div>
                         </a>
                     </nav>
-                </header>
-                
-                <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-between bg-primary">
-                    <h1 class="font-bold text-[12rem] text-white">Studio</h1>
-                    <h1 class="font-bold text-9xl text-right text-white z-10">Peregrino</h1>
                 </div>
+            </div>
+        </div>
+    </header>
 
-                <div class="absolute bottom-8 flex flex-col justify-center w-96">
-                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-lg text-white bg-white/20">Design que inspira</h2>
-                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-bl-lg place-self-center text-white bg-white/20">a sua marca</h2>
-                    <h2 class="text-4xl font-semibold w-fit p-3 rounded-bl-lg rounded-tr-lg rounded-br-lg place-self-end text-white bg-white/20">memorável</h2>
+    <section class="w-full mt-16" id="home">
+        <div class="flex flex-col p-4 justify-center h-screen items-center">
+            <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-center items-center">
+                <div class="flex flex-col p-16 rounded-3xl w-3/4 h-full">
+                    <div class="relative flex items-center gap-2">
+                        <div class="relative flex items-center">
+                            <h1 class="font-bold font-expletus text-9xl">Design</h1>
+                            <span class="font-bold text-3xl">que</span>
+                        </div>
+                        <div class="relative">
+                            <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box1.jpg" alt="cover">
+                            <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
+                        </div>
+                    </div>
+  
+                    <div class="relative flex items-center gap-2">
+                        <div class="relative">
+                            <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box2.jpg" alt="Photo by Paulina Milde-Jachowska on Unsplash of a table topped with lots of different types of fabric">
+                            <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
+                        </div>
+                        <div class="flex items-center">
+                            <h1 class="font-bold text-9xl text-gold">Inspira</h1>
+                            <span class="font-bold text-3xl">sua</span>
+                        </div>
+                    </div>
+                    <h1 class="font-bold text-8xl">Marca Memorável</h1>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div class="p-4">
-            <div class="flex flex-col gap-2 justify-start items-start">
-                <div class="flex flex-col w-full h-40 rounded-3xl">
-                    <div class="flex h-24 p-2 w-full">
-                        <h1 class="font-bold text-7xl text-white">Soluções</h1>
-                    </div>
-                    <div class="flex p-2 w-1/2">
-                        <p class="text-white text-md">Oferecemos um conjunto abrangente de serviços para atender a todas as suas necessidades criativas.</p>
-                    </div>
-                </div>
-                <div class="flex w-full h-80 bg-white rounded-3xl">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
+
+    <section class="w-full flex flex-col justify-center items-center">
         <div class="flex flex-col p-4 justify-center h-80 items-center">
-            <div class="flex flex-col p-4 rounded-3xl w-full h-80 justify-center bg-primary">
-                <h2 class="text-5xl font-semibold text-center w-fit p-8 text-white">Acreditamos que o design é mais do que apenas estética; é a linguagem visual que comunica, inspira e cria conexões.</h2>
+            <div class="flex flex-col p-4 rounded-3xl w-3/4 h-80 justify-center bg-black">
+                <h2 class="text-5xl font-semibold text-center text-gray-100 w-fit p-8">Acreditamos que o design é mais do
+                    que apenas estética; é a linguagem visual que comunica, inspira e cria conexões.</h2>
             </div>
         </div>
     </section>
+
+    <section id="trabalhos" class="w-full flex flex-col justify-center items-center">
+        <div class="flex flex-col p-16 rounded-3xl w-3/4 h-full gap-8">
+            <div class="flex flex-col text-center w-full">
+                <h1 class="font-bold text-7xl">Alguns de nossos trabalhos</h1>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-1 h-96 rounded-3xl bg-green-500 shadow-sm"></div>
+                <div class="flex flex-1 h-96 rounded-3xl bg-yellow-500"></div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-1 h-96 rounded-3xl bg-green-500 shadow-sm"></div>
+                <div class="flex flex-1 h-96 rounded-3xl bg-yellow-500"></div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="w-full flex flex-col justify-center items-center">
+        <div class="flex flex-col p-16 rounded-3xl w-3/4 h-full gap-8">
+            <div class="flex flex-col text-center w-full">
+                <h1 class="font-bold text-7xl">E aí? Interessado em trabalhar conosco?</h1>
+            </div>
+            <div class="flex flex-col text-center w-full">
+                <h1 class="text-xl">Nos envie uma mensagem:</h1>
+                <a href="mailto:studioperegrino.adm@gmail.com" class="hover:text-gold font-semibold">studioperegrino.adm@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex flex-col gap-4 justify-center items-center">
+        <img src="images/StudioPeregrinoBlackCompleto.png" class="w-52"/>
+        <div class="flex">
+            <small>Designed & Developed by Studio Peregrino</small>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="tailwind.config.js"></script>
+
 </body>
 
 </html>
