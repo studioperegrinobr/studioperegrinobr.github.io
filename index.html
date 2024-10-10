@@ -26,13 +26,13 @@
     <script src="cdn-tailwindcss-3.4.5.js"></script>
 </head>
 
-<body class="flex flex-col w-full h-screen scroll-smooth animate-fadeIn justify-start items-center bg-gray-100 gap-16">
-    <header class="w-full fixed top-0 backdrop-blur z-50">
-        <div class="flex flex-col p-4 justify-center items-center">
-            <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full justify-center items-center">
+<body class="animate-fadeIn flex-col h-screen animate-fadeIn justify-start items-center bg-gray-100 gap-16 overflow-x-hidden">
+    <header class="w-full fixed top-0 backdrop-blur z-50 h-20">
+        <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col p-4 rounded-b-3xl w-full justify-center items-center">
                 <div class="flex justify-between items-center w-full">
                     <div class="flex">
-                        <img src="images/StudioPeregrinoBlack.png" class="w-24" alt="logo">
+                        <img src="images/StudioPeregrinoCompletoInline.png" class="w-28" alt="logo">
                     </div>
                     <nav class="flex  items-center gap-2 p-2  rounded-l-md rounded-br-md">
                         <a href="#home">
@@ -51,32 +51,34 @@
         </div>
     </header>
 
-    <section class="w-full mt-16" id="home">
+    <section class="w-full" id="home">
         <div class="flex flex-col p-4 justify-center h-screen items-center">
             <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-center items-center">
-                <div class="flex flex-col p-16 rounded-3xl w-3/4 h-full">
-                    <div class="relative flex items-center gap-2">
-                        <div class="relative flex items-center">
-                            <h1 class="font-bold font-expletus text-9xl">Design</h1>
-                            <span class="font-bold text-3xl">que</span>
+                <div class="flex flex-col justify-center items-center p-16 rounded-3xl w-3/4 h-full">
+                    <div class="flex flex-col 2xl:scale-150 justify-center items-start">
+                        <div class="relative flex items-center gap-2">
+                            <div class="relative flex items-center">
+                                <h1 class="font-bold font-expletus text-9xl text-left">Design</h1>
+                                <span class="font-bold text-3xl">que</span>
+                            </div>
+                            <div class="relative">
+                                <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box1.jpg" alt="cover">
+                                <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
+                            </div>
                         </div>
-                        <div class="relative">
-                            <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box1.jpg" alt="cover">
-                            <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
+      
+                        <div class="relative flex items-center gap-2">
+                            <div class="relative">
+                                <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box2.jpg" alt="Photo by Paulina Milde-Jachowska on Unsplash of a table topped with lots of different types of fabric">
+                                <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
+                            </div>
+                            <div class="flex items-center">
+                                <h1 class="font-bold text-[150px] text-gold">Inspira</h1>
+                                <span class="font-bold text-3xl">sua</span>
+                            </div>
                         </div>
+                        <h1 class="font-bold text-8xl">Marca Memorável</h1>
                     </div>
-  
-                    <div class="relative flex items-center gap-2">
-                        <div class="relative">
-                            <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box2.jpg" alt="Photo by Paulina Milde-Jachowska on Unsplash of a table topped with lots of different types of fabric">
-                            <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
-                        </div>
-                        <div class="flex items-center">
-                            <h1 class="font-bold text-9xl text-gold">Inspira</h1>
-                            <span class="font-bold text-3xl">sua</span>
-                        </div>
-                    </div>
-                    <h1 class="font-bold text-8xl">Marca Memorável</h1>
                 </div>
             </div>
         </div>
@@ -128,7 +130,10 @@
         </div>
     </footer>
 
+    <div id="follower" class="absolute w-20 h-20 rounded-lg bg-black/10 backdrop-blur"></div>
+
     <script src="script.js"></script>
+    <script src="cursorCircle.js"></script>
     <script src="tailwind.config.js"></script>
 
 </body>
