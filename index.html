@@ -9,9 +9,9 @@
     <meta property="og:title" content="Studio Peregrino">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.studioperegrino.com.br/">
-    <meta property="og:description" content="DESIGN QUE INSPIRA">
+    <meta property="og:description" content="DESIGN INTELIGENTE">
     <meta itemprop="name" content="Studio Peregrino">
-    <meta itemprop="description" content="DESIGN QUE INSPIRA">
+    <meta itemprop="description" content="DESIGN INTELIGENTE">
     <meta itemprop="url" content="https://www.studioperegrino.com.br/">
 
     <title>Studio Peregrino</title>
@@ -23,11 +23,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet"> 
     <script src="cdn-tailwindcss-3.4.5.js"></script>
 </head>
 
-<body class="animate-fadeIn flex-col h-screen animate-fadeIn justify-start items-center bg-gray-100 gap-16 overflow-x-hidden">
-    <header class="w-full fixed top-0 backdrop-blur z-50 h-20">
+<body class="animate-fadeIn flex-col p-4 animate-fadeIn justify-start items-center space-y-12 overflow-x-hidden">
+    <header class="w-full fixed top-0 z-50 h-20">
         <div class="flex flex-col justify-center items-center">
             <div class="flex flex-col p-4 rounded-b-3xl w-full justify-center items-center">
                 <div class="flex justify-between items-center w-full">
@@ -51,42 +52,29 @@
         </div>
     </header>
 
-    <section class="w-full" id="home">
-        <div class="flex flex-col p-4 justify-center h-screen items-center">
-            <div class="flex flex-col p-4 rounded-br-3xl rounded-tl-3xl w-full h-full justify-center items-center">
-                <div class="flex flex-col justify-center items-center p-16 rounded-3xl w-3/4 h-full">
-                    <div class="flex flex-col 2xl:scale-150 justify-center items-start">
-                        <div class="relative flex items-center gap-2">
-                            <div class="relative flex items-center">
-                                <h1 class="font-bold font-expletus text-9xl text-left">Design</h1>
-                                <span class="font-bold text-3xl">que</span>
-                            </div>
-                            <div class="relative">
-                                <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box1.jpg" alt="cover">
-                                <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
-                            </div>
-                        </div>
-      
-                        <div class="relative flex items-center gap-2">
-                            <div class="relative">
-                                <img class="z-5 w-48 aspect-video rounded-3xl object-cover filter grayscale"  src="images/box2.jpg" alt="Photo by Paulina Milde-Jachowska on Unsplash of a table topped with lots of different types of fabric">
-                                <div class="absolute inset-0 bg-[#B68B2E] rounded-3xl opacity-50"></div>
-                            </div>
-                            <div class="flex items-center">
-                                <h1 class="font-bold text-[150px] text-gold">Inspira</h1>
-                                <span class="font-bold text-3xl">sua</span>
-                            </div>
-                        </div>
-                        <h1 class="font-bold text-8xl">Marca Memorável</h1>
-                    </div>
+    <section class="flex flex-col lg:flex-row w-full h-screen border border-white rounded-2xl items-center" id="home">
+        <div class="flex flex-col w-1/2 p-4 gap-4 justify-center h-screen items-start">
+            <div class="flex flex-col w-full">
+                <h1 class="font-imperial xl:text-10xl 2xl:text-12xl w-fit">Design</h1>
+                <div class="flex">
+                    <h1 class="font-extralight text-8xl -mt-2">Inteligente</h1>
                 </div>
             </div>
+            <div class="flex flex-col">
+                <h2 class="text-2xl font-light text-start w-fit">Criado por humanos</h2>
+                <h2 class="text-2xl font-light text-start w-fit">potencializado por IA</h2>
+            </div>
+        </div>
+        <div class="flex w-1/2 h-full justify-center items-center rounded-xl" id="home">
+            <img src="images/hand.webp" class="h-full rounded-3xl object-cover" alt="mão levantada">
         </div>
     </section>
+                
 
-    <section class="w-full flex flex-col justify-center items-center">
+
+    <section class="w-full flex flex-col justify-center items-center rounded-2xl bg-gray-300">
         <div class="flex flex-col p-4 justify-center h-80 items-center">
-            <div class="flex flex-col p-4 rounded-3xl w-3/4 h-80 justify-center bg-black">
+            <div class="flex flex-col p-4 rounded-3xl w-3/4 h-80 justify-cente">
                 <h2 class="text-5xl font-semibold text-center text-gray-100 w-fit p-8">Acreditamos que o design é mais do
                     que apenas estética; é a linguagem visual que comunica, inspira e cria conexões.</h2>
             </div>
